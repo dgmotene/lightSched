@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="wethinkcode.stage.StageServiceAPITest" time="0.761" tests="2" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/wethinkcode_/Desktop/Elective projects/sin-ex-loadshed-4/stage/target/test-classes:/home/wethinkcode_/Desktop/Elective projects/sin-ex-loadshed-4/stage/target/classes:/home/wethinkcode_/.m2/repository/io/javalin/javalin/5.0.1/javalin-5.0.1.jar:/home/wethinkcode_/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-server/11.0.12/jetty-server-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/toolchain/jetty-jakarta-servlet-api/5.0.2/jetty-jakarta-servlet-api-5.0.2.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-http/11.0.12/jetty-http-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-util/11.0.12/jetty-util-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-io/11.0.12/jetty-io-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-webapp/11.0.12/jetty-webapp-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-servlet/11.0.12/jetty-servlet-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-security/11.0.12/jetty-security-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-xml/11.0.12/jetty-xml-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/websocket/websocket-jetty-server/11.0.12/websocket-jetty-server-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/websocket/websocket-jetty-common/11.0.12/websocket-jetty-common-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/websocket/websocket-core-common/11.0.12/websocket-core-common-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/11.0.12/websocket-servlet-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/websocket/websocket-core-server/11.0.12/websocket-core-server-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-annotations/11.0.12/jetty-annotations-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-plus/11.0.12/jetty-plus-11.0.12.jar:/home/wethinkcode_/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.0/jakarta.transaction-api-2.0.0.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-jndi/11.0.12/jetty-jndi-11.0.12.jar:/home/wethinkcode_/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/wethinkcode_/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/wethinkcode_/.m2/repository/org/ow2/asm/asm-commons/9.3/asm-commons-9.3.jar:/home/wethinkcode_/.m2/repository/org/ow2/asm/asm-tree/9.3/asm-tree-9.3.jar:/home/wethinkcode_/.m2/repository/org/ow2/asm/asm-analysis/9.3/asm-analysis-9.3.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/websocket/websocket-jetty-api/11.0.12/websocket-jetty-api-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.7.10/kotlin-stdlib-jdk8-1.7.10.jar:/home/wethinkcode_/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.7.10/kotlin-stdlib-1.7.10.jar:/home/wethinkcode_/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.7.10/kotlin-stdlib-common-1.7.10.jar:/home/wethinkcode_/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/wethinkcode_/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.7.10/kotlin-stdlib-jdk7-1.7.10.jar:/home/wethinkcode_/.m2/repository/com/konghq/unirest-java/3.13.10/unirest-java-3.13.10-standalone.jar:/home/wethinkcode_/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/wethinkcode_/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/wethinkcode_/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/wethinkcode_/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/wethinkcode_/.m2/repository/org/apache/httpcomponents/httpcore-nio/4.4.13/httpcore-nio-4.4.13.jar:/home/wethinkcode_/.m2/repository/org/apache/httpcomponents/httpasyncclient/4.1.5/httpasyncclient-4.1.5.jar:/home/wethinkcode_/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/wethinkcode_/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/home/wethinkcode_/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/home/wethinkcode_/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/home/wethinkcode_/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/home/wethinkcode_/Desktop/Elective projects/sin-ex-loadshed-4/common/target/classes:/home/wethinkcode_/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.3/log4j-api-2.25.3.jar:/home/wethinkcode_/.m2/repository/org/apache/activemq/activemq-all/5.15.8/activemq-all-5.15.8.jar:/home/wethinkcode_/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0/junit-jupiter-api-5.4.0.jar:/home/wethinkcode_/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/wethinkcode_/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/wethinkcode_/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/home/wethinkcode_/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.3/jackson-datatype-jsr310-2.13.3.jar:/home/wethinkcode_/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/home/wethinkcode_/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/wethinkcode_/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/wethinkcode_/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/wethinkcode_/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/wethinkcode_/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/wethinkcode_/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/wethinkcode_/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/wethinkcode_/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.0/junit-jupiter-engine-5.4.0.jar:/home/wethinkcode_/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0/junit-platform-engine-1.4.0.jar:/home/wethinkcode_/.m2/repository/org/assertj/assertj-core/3.23.1/assertj-core-3.23.1.jar:/home/wethinkcode_/.m2/repository/net/bytebuddy/byte-buddy/1.12.10/byte-buddy-1.12.10.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/wethinkcode_/Desktop/Elective projects/sin-ex-loadshed-4/stage/target/surefire/surefirebooter13734145780758825818.jar /home/wethinkcode_/Desktop/Elective projects/sin-ex-loadshed-4/stage/target/surefire 2026-05-05T08-59-17_410-jvmRun1 surefire6749993830138035515tmp surefire_25518036522470318605tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/wethinkcode_/Desktop/Elective projects/sin-ex-loadshed-4/stage/target/test-classes:/home/wethinkcode_/Desktop/Elective projects/sin-ex-loadshed-4/stage/target/classes:/home/wethinkcode_/.m2/repository/io/javalin/javalin/5.0.1/javalin-5.0.1.jar:/home/wethinkcode_/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-server/11.0.12/jetty-server-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/toolchain/jetty-jakarta-servlet-api/5.0.2/jetty-jakarta-servlet-api-5.0.2.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-http/11.0.12/jetty-http-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-util/11.0.12/jetty-util-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-io/11.0.12/jetty-io-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-webapp/11.0.12/jetty-webapp-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-servlet/11.0.12/jetty-servlet-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-security/11.0.12/jetty-security-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-xml/11.0.12/jetty-xml-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/websocket/websocket-jetty-server/11.0.12/websocket-jetty-server-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/websocket/websocket-jetty-common/11.0.12/websocket-jetty-common-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/websocket/websocket-core-common/11.0.12/websocket-core-common-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/11.0.12/websocket-servlet-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/websocket/websocket-core-server/11.0.12/websocket-core-server-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-annotations/11.0.12/jetty-annotations-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-plus/11.0.12/jetty-plus-11.0.12.jar:/home/wethinkcode_/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.0/jakarta.transaction-api-2.0.0.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/jetty-jndi/11.0.12/jetty-jndi-11.0.12.jar:/home/wethinkcode_/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/wethinkcode_/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/wethinkcode_/.m2/repository/org/ow2/asm/asm-commons/9.3/asm-commons-9.3.jar:/home/wethinkcode_/.m2/repository/org/ow2/asm/asm-tree/9.3/asm-tree-9.3.jar:/home/wethinkcode_/.m2/repository/org/ow2/asm/asm-analysis/9.3/asm-analysis-9.3.jar:/home/wethinkcode_/.m2/repository/org/eclipse/jetty/websocket/websocket-jetty-api/11.0.12/websocket-jetty-api-11.0.12.jar:/home/wethinkcode_/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.7.10/kotlin-stdlib-jdk8-1.7.10.jar:/home/wethinkcode_/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.7.10/kotlin-stdlib-1.7.10.jar:/home/wethinkcode_/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.7.10/kotlin-stdlib-common-1.7.10.jar:/home/wethinkcode_/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/wethinkcode_/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.7.10/kotlin-stdlib-jdk7-1.7.10.jar:/home/wethinkcode_/.m2/repository/com/konghq/unirest-java/3.13.10/unirest-java-3.13.10-standalone.jar:/home/wethinkcode_/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/wethinkcode_/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/wethinkcode_/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/wethinkcode_/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/wethinkcode_/.m2/repository/org/apache/httpcomponents/httpcore-nio/4.4.13/httpcore-nio-4.4.13.jar:/home/wethinkcode_/.m2/repository/org/apache/httpcomponents/httpasyncclient/4.1.5/httpasyncclient-4.1.5.jar:/home/wethinkcode_/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/wethinkcode_/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/home/wethinkcode_/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/home/wethinkcode_/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/home/wethinkcode_/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/home/wethinkcode_/Desktop/Elective projects/sin-ex-loadshed-4/common/target/classes:/home/wethinkcode_/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.3/log4j-api-2.25.3.jar:/home/wethinkcode_/.m2/repository/org/apache/activemq/activemq-all/5.15.8/activemq-all-5.15.8.jar:/home/wethinkcode_/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0/junit-jupiter-api-5.4.0.jar:/home/wethinkcode_/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/wethinkcode_/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/wethinkcode_/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/home/wethinkcode_/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.3/jackson-datatype-jsr310-2.13.3.jar:/home/wethinkcode_/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/home/wethinkcode_/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/wethinkcode_/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/wethinkcode_/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/wethinkcode_/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/wethinkcode_/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/wethinkcode_/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/wethinkcode_/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/wethinkcode_/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.0/junit-jupiter-engine-5.4.0.jar:/home/wethinkcode_/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0/junit-platform-engine-1.4.0.jar:/home/wethinkcode_/.m2/repository/org/assertj/assertj-core/3.23.1/assertj-core-3.23.1.jar:/home/wethinkcode_/.m2/repository/net/bytebuddy/byte-buddy/1.12.10/byte-buddy-1.12.10.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/wethinkcode_"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/wethinkcode_/Desktop/Elective projects/sin-ex-loadshed-4/stage"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/wethinkcode_/Desktop/Elective projects/sin-ex-loadshed-4/stage/target/surefire/surefirebooter13734145780758825818.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.7+6-Ubuntu-0ubuntu122.04"/>
+    <property name="user.name" value="wethinkcode_"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.9.3-76060903-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/wethinkcode_/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="/home/wethinkcode_/Desktop/Elective projects/sin-ex-loadshed-4/stage"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.7+6-Ubuntu-0ubuntu122.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="setNewStage_validStage" classname="wethinkcode.stage.StageServiceAPITest" time="0.477">
+    <failure message="expected: &lt;200&gt; but was: &lt;500&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200> but was: <500>
+	at wethinkcode.stage.StageServiceAPITest.setNewStage_validStage(StageServiceAPITest.java:49)
+]]></failure>
+    <system-out><![CDATA[ INFO | Starting Javalin ...
+ INFO | 
+       __                  ___          ______
+      / /___ __   ______ _/ (_)___     / ____/
+ __  / / __ `/ | / / __ `/ / / __ \   /___ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /  ____/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/  /_____/
+
+       https://javalin.io/documentation
+
+ INFO | Your JDK supports Loom. Javalin will prefer Virtual Threads by default. Disable with `ConcurrencyUtil.useLoom = false`.
+ INFO | Listening on http://localhost:7472/
+ INFO | You are running Javalin 5.0.1 (released October 2, 2022. Your Javalin version is 1310 days old. Consider checking for a newer version.).
+ INFO | Javalin started in 140ms \o/
+ WARN | Uncaught exception
+java.lang.RuntimeException: javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused
+	at wethinkcode.loadshed.common.mq.MqTopicSender.init(MqTopicSender.java:25)
+	at wethinkcode.loadshed.common.mq.MqTopicSender.init(MqTopicSender.java:13)
+	at wethinkcode.stage.StageService.broadcastStageChangeEvent(StageService.java:110)
+	at wethinkcode.stage.StageService.setNewStage(StageService.java:97)
+	at io.javalin.routing.HandlerEntry.handle(HandlerEntry.kt:19)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda-8$lambda-6$lambda-5(DefaultTasks.kt:35)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:79)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:46)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:34)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1571)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:57)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1544)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1302)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$0(HttpChannel.java:505)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:762)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:497)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:282)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:374)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:252)
+	at wethinkcode.loadshed.common.mq.MqTopicSender.init(MqTopicSender.java:19)
+	... 36 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:525)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:488)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:169)
+	at org.apache.activemq.transport.InactivityMonitor.start(InactivityMonitor.java:52)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:354)
+	... 38 more
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/wethinkcode_/.m2/repository/org/apache/activemq/activemq-all/5.15.8/activemq-all-5.15.8.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/wethinkcode_/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+]]></system-err>
+  </testcase>
+  <testcase name="setNewStage_illegalStageValue" classname="wethinkcode.stage.StageServiceAPITest" time="0.024"/>
+</testsuite>

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: wethinkcode.stage.StageServiceAPITest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.761 s <<< FAILURE! - in wethinkcode.stage.StageServiceAPITest
+setNewStage_validStage  Time elapsed: 0.477 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <500>
+	at wethinkcode.stage.StageServiceAPITest.setNewStage_validStage(StageServiceAPITest.java:49)
+
