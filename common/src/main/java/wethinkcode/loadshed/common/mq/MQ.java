@@ -1,15 +1,12 @@
 package wethinkcode.loadshed.common.mq;
 
-/**
- * I contain a few variables and definitions common to all the MQ utility classes.
- */
 public interface MQ
 {
-    static final String URL = "tcp://localhost:61616";
+    String URL = "tcp://localhost:61616";
+    String USER = "admin";
+    String PASSWD = "admin";
+    String STAGE_TOPIC = "stage";
+    String ALERT_QUEUE = "alert";
 
-    static final String USER = "admin";
-
-    static final String PASSWD = "admin";
-
-    static final String STAGE_TOPIC = "stage";
+    enum DestinationType { QUEUE, TOPIC }
 }
