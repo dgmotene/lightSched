@@ -11,6 +11,7 @@
         <module>schedule</module>
         <module>web</module>
         <module>common</module>
+        <module>alert</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -47,6 +48,12 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.36</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+            <version>5.17.2</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
