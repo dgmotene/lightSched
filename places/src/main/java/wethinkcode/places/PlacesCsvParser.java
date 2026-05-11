@@ -56,6 +56,7 @@ public class PlacesCsvParser
     Places parseDataLines( final LineNumberReader in ){
         final Set<Town> allTowns = in.lines()
             .map( this::splitLineIntoValues )
+            .filter( v -> v.length > FEATURE_COLUMN )  // skip blank/short lines
             .filter(this::isLineAWantedFeature )
             .map( this::asTown )
             .collect( Collectors.toSet() );

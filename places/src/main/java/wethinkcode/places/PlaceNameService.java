@@ -53,10 +53,13 @@ public class PlaceNameService implements Runnable {
     public static final String CFG_DATA_FILE = "data.file";
     public static final String CFG_SERVICE_PORT = "server.port";
 
-    public static void main( String[] args ){
-        final PlaceNameService svc = new PlaceNameService().initialise();
-        final int exitCode = new CommandLine( svc ).execute( args );
-        System.exit( exitCode );
+    public static void main(String[] args) {
+        PlaceNameService svc = new PlaceNameService();
+
+        new CommandLine(svc).parseArgs(args);
+
+        svc.initialise();
+        svc.start();
     }
 
     // Instance state

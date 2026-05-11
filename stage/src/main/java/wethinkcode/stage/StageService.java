@@ -105,10 +105,10 @@ public class StageService
     private void broadcastStageChangeEvent(Context ctx) {
         final StageDO stageData = ctx.bodyAsClass(StageDO.class);
         if (sender != null) {
-            sender.send(String.valueOf(stageData.getStage()));
+            sender.send("{\"stage\":" + stageData.getStage() + "}");
         } else {
             final MqTopicSender mqSender = new MqTopicSender().init(MQ_TOPIC_NAME);
-            mqSender.send(String.valueOf(stageData.getStage()));
+            mqSender.send("{\"stage\":" + stageData.getStage() + "}");
             mqSender.close();
         }
     }
